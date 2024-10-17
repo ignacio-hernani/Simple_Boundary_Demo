@@ -1,9 +1,8 @@
 variable "boundary_cluster_id" {
   description = "The ID of the HCP Boundary cluster."
   type        = string
-  default     = "boundary-cluster"
+  default     = "hcp-boundary-cluster-with-vault"
 }
-
 
 variable "username" {
   type = string
@@ -52,19 +51,13 @@ variable "cloud_provider" {
 variable "vault_tier" {
   description = "Tier of the HCP Vault cluster. Valid options for tiers."
   type        = string
-  default     = "standard"
+  default     = "starter_small"
 }
 
 variable "boundary_tier" {
   description = "Tier of the HCP Boundary cluster. Valid options for tiers."
   type        = string
-  default     = "STANDARD"
-}
-
-# Remove if not rquired
-variable "datadog_api_key" {
-  type        = string
-  description = "Datadog API KEY"
+  default     = "PLUS"
 }
 
 variable "aws_vpc_cidr" {
