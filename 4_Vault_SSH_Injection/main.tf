@@ -7,12 +7,12 @@ terraform {
     }
     aws = {
       source  = "hashicorp/aws"
-      version = "5.7.0"
+      version = "5.72.1"
     }
 
     cloudinit = {
       source  = "hashicorp/cloudinit"
-      version = "2.3.2"
+      version = "2.3.5"
     }
   }
 }
