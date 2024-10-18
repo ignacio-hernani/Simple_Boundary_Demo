@@ -27,7 +27,7 @@ variable "vault_cluster_id" {
 variable "peering_id" {
   description = "The ID of the HCP peering connection."
   type        = string
-  default     = "hcp-peering"
+  default     = "peering"
 }
 
 variable "route_id" {
