@@ -1,7 +1,7 @@
 variable "boundary_cluster_id" {
   description = "The ID of the HCP Boundary cluster."
   type        = string
-  default     = "hcp-boundary-cluster-with-vault"
+  default     = "hcp-boundary-cluster"
 }
 
 variable "username" {
@@ -21,7 +21,7 @@ variable "hvn_id" {
 variable "vault_cluster_id" {
   description = "The ID of the HCP Vault cluster."
   type        = string
-  default     = "vault-cluster"
+  default     = "hcp-vault-cluster"
 }
 
 variable "peering_id" {
@@ -39,7 +39,7 @@ variable "route_id" {
 variable "region" {
   description = "The region of the HCP HVN and Vault cluster."
   type        = string
-  default     = "eu-west-2"
+  default     = "eu-west-1"
 }
 
 variable "cloud_provider" {

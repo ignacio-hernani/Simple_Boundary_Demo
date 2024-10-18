@@ -13,7 +13,7 @@ variable "postgres_password" {
 variable "region" {
   description = "The region of the HCP HVN and Vault cluster."
   type        = string
-  default     = "eu-west-2"
+  default     = "eu-west-1"
 }
 
 variable "windows_instance_name" {

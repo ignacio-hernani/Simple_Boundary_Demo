@@ -28,7 +28,7 @@ resource "boundary_host_catalog_plugin" "aws_example" {
   plugin_name = "aws"
 
   attributes_json = jsonencode({
-    "region"                      = "us-east-1",
+    "region"                      = "eu-west-1",
     "disable_credential_rotation" = true
   })
   secrets_json = jsonencode({
@@ -106,7 +106,7 @@ resource "boundary_storage_bucket" "aws_example" {
   plugin_name = "aws"
   bucket_name = aws_s3_bucket.storage_bucket.id
   attributes_json = jsonencode({
-    "region" = "us-east-1",
+    "region" = "eu-west-1",
   "disable_credential_rotation" : true })
 
   # recommended to pass in aws secrets using a file() or using environment variables
