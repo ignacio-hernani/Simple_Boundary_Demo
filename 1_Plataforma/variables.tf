@@ -64,3 +64,8 @@ variable "aws_vpc_cidr" {
   type        = string
   description = "VPC CIDR"
 }
+
+variable "project_id" {
+  type = string
+  description = "HCP Project ID"
+}
